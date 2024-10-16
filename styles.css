@@ -1,0 +1,335 @@
+/* Página index abaixo*/
+body {
+    background-color: #DDCC55;
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Stoke', 'Lucida Bright', 'Liberation';
+}
+
+a {
+    color: #222222;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #222222;
+}
+
+header {
+    display: block;
+    margin-bottom: 1px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+nav  { 
+    display: block; 
+    width: 20%; 
+    float: left;      
+} 
+
+section { 
+    display: block; 
+    width: 70%; 
+    float: left;
+} 
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.imgLogo {
+    max-width: 320px;
+    border-bottom: 3px solid #222222;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+
+.ender {
+    text-align: right;
+    font-family: 'Karla', 'Verdana', 'Ubuntu';
+    float: right;
+    line-height: 140%;
+    font-size: 14px;
+}
+
+hr {
+    height: 2px;
+    width: 320px;
+    background-color: gray;
+    border: none;
+    margin: 10px 0;
+}
+ul {
+ list-style-type: square;
+ line-height: 230%;
+ color: #000000;
+ margin-top: 40px;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 10px;
+    font-family: 'Karla', 'Verdana', 'Ubuntu';
+    list-style-type: square;
+    color: #000000;
+    line-height: 200%;
+}
+
+.logo {
+    text-align: center;
+}
+
+.apres {
+    font-family: 'Stoke', 'Lucida Bright', 'Liberation', serif;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.Titulo { 
+    text-align: center; 
+    align-items: center;
+} 
+
+.academia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.academia ol {
+    list-style-position: inside;
+    padding: 0;
+    text-align: justify;      
+}
+
+.combo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.combo ol {
+    list-style-position: inside;
+    padding: 0;
+    text-align: justify;      
+}
+
+.natacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.natacao ol {
+    list-style-position: inside;
+    padding: 0;
+    text-align: justify;      
+}
+
+
+/*------------------------------------------*/
+
+
+/* Página planos abaixo*/
+.tabplanos{
+    align-items: center;
+    margin-left: 0;
+    margin-right: 15%;
+}
+
+.listaPlano {
+    width: 300px;
+    color: #202020;
+    background-color: #EEEEBB;
+    font-size: 12px;
+    padding: 10px 10px 10px 30px;
+    border: 3px solid #202020;
+    margin: 0 auto 0px auto;
+    margin-top: 0px;
+    align-items: center;
+    display: flex;
+    
+}
+
+.listaPlano h4 {
+    font-size: 14px;
+}
+
+.listaPlano ul {
+    list-style-type: square;
+    padding-left: 20px; 
+    margin-top: 1px;
+}
+
+.listaPlano ol {
+    color: #202020;
+    list-style-type: lower-alpha;
+    padding-left: 20px;
+}
+
+.preco {
+    color: #CC0000;
+}
+h4{
+    text-align: center;
+}
+p{
+   text-align:center;
+}
+
+/* -----------------------------------------*/
+
+
+
+/*Pág equipamentos*/
+
+.tabEquip {
+    width: 510px;
+    border: 1px solid #202020;
+    border-collapse: separate;
+    margin: 10px 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.tabTitulo {
+    background-color: #EEEEBB;
+    color: #FFFFFF;
+    font-size: 14px;
+    background-color: #402020 ;
+}
+
+.tabSubTit {
+    background-color: #802020;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    height: 5px;
+    
+}
+
+.textoequi{
+background-color: #EEEEBB;
+}
+
+.tabEquip th{
+    border: 1px solid #202020;
+    padding: 10px;
+    
+}
+
+.tabEquip td{
+    font-size:12px;
+    border: 1px solid #202020;
+    padding: 10px;
+   
+}
+
+.ImgDes {
+    text-align: center;
+    background-color:  #FFFFFF;
+    
+}
+
+.ImgDes img {
+    width: 130px;
+    height: 130px;
+   
+}
+
+.tabSubTit a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.tabSubTit a:hover{
+    color: #FFEE88;
+}
+.DescExe{
+    width: 250px;
+    text-align: justify;
+    align-items: baseline;
+    background-color: #FFFF99;
+    vertical-align: top;
+}
+/* -----------------------------------------*/
+
+
+/*págna de inscrição-*/
+.formul { 
+    width: 400px; 
+    color: #202020; 
+    font-size: 12px; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    margin:  0px auto 10px auto; 
+    border:  3px solid #202020;  
+    background-color: #EEEEBB; 
+} 
+.fsPessoal { 
+    width: 340px; 
+    margin-left: auto; 
+    margin-right: auto; 
+} 
+.linhaNome { 
+    height: 30px; 
+    width: 340px; 
+    padding-top: 8px; 
+} 
+.linhaDados { 
+    width: 340px; 
+    height: 130px; 
+} 
+.fsGenero { 
+    float: right; 
+    margin-top: 10px; 
+    margin-right: 10px; 
+} 
+.fsCartao { 
+    width: 280px; 
+    margin-left: auto; 
+    margin-right: auto; 
+} 
+.inpNome { 
+    width: 220px; 
+} 
+.ColDirMat { 
+    float: right; 
+} 
+.ColEsqPes  { 
+    float: left; 
+    width: 70px; 
+    display: block; 
+} 
+.numDD {  width:35px;  } 
+.numQD {  width:50px;  } 
+.inpNCC {  width: 130px; } 
+.inpTelef {  width: 90px;  } 
+.inpMat  {  width: 70px;  } 
+.inpVal  {  width: 50px;  } 
+.colLabCrd { 
+    width: 270px; 
+    height: 30px; 
+    float: left; 
+    text-align: left; 
+} 
+.colValTot { 
+    float: left; 
+    width: 220px; 
+    display: block; 
+    text-align: left; 
+} 
+.entDireita { 
+    float: right; 
+    margin-right: 20px; 
+} 

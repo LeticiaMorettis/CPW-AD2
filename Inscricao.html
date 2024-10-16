@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+     <!-- Fonte Karla - google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+          <!-- Fonte Stoke - google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Stoke:wght@300;400&display=swap" rel="stylesheet">
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="styles.css">  <!-- Conexão com CSS --> 
+        
+</head>
+
+
+
+<!--Informações Principais-->
+<body>
+    <header>
+        <div class="topo">
+            <img src="Imagens/HalteresSeusHabitosTopo.png" alt="Topo" class="imgLogo">
+            <address class="ender">
+                Estrada do Puxa Ferro, 12<br>
+                Telefone: (21) 91234-5678<br>
+                <a href="mailto:contato@halterhabit.com.br">contato@halterhabit.com.br</a>
+            </address>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Apresentação</a></li>
+                <li><a href="Planos.html">Planos</a></li>
+                <li><a href="Equipamentos.html">Equipamentos</a></li>
+                <li><a href="Inscricao.html">Inscrição</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+
+<!--Informações da página Inscrição-->
+<section>
+    <h3 class="Titulo">Inscrição</h3> 
+    <form method="POST"> 
+        <div class="formul"> 
+            <fieldset class="fsPessoal"> 
+                <legend> Dados Pessoais</legend> 
+                <div class="linhaNome"> 
+                    <label for="nome" class="ColEsqPes">Nome: </label> 
+                    <input type="text" class="inpNome" id="nome" name="TxtNome"> 
+                </div> 
+                <div class="linhaDados"> 
+                    <fieldset class="fsGenero"> 
+                        <legend> Genero</legend> 
+                        <input type="radio" name="TglGenero" value="M"> Masculino<br/> 
+                        <input type="radio" checked name="TglGenero" value="F"> Feminino<br/> 
+                        <input type="radio" name="TglGenero" value="O"> Outro<br/> 
+                    </fieldset> 
+                    <br/><label for="tel" class="ColEsqPes">Telefone: </label> 
+                    <input type="tel" class="inpTelef" id="tel" name="TxtTelefone" oninput="validaTelefone(event)" /><br/>      
+                    <br/><label for="cel" class="ColEsqPes">Celular: </label> 
+                    <input type="tel" class="inpTelef" id="cel" name="TxtCelular" oninput="validaTelefone(event)" /><br/> 
+                    <br/><label for="idade" class="ColEsqPes">Idade:</label> 
+                    <input type="number" class="numDD" id="idade" name="TxtIdade" min="18" max="88" value="18" /><br/> 
+                </div> 
+            </fieldset> 
+
+            <fieldset class="fsPessoal"> 
+                <legend> Matrícula</legend> 
+                <div class="linhaNome"> 
+                    <label for="mat">Matriculado? 
+                    <input type="checkbox" name="chkMatric" value="S" id="mat" />
+                    </label> 
+                    <label for="mat" class="ColDirMat">Número:  
+                    <input type="text" class="inpMat" id="numeroMatricula" name="TxtMatricula" /> 
+                    </label>
+                </div> 
+
+                <div class="linhaNome"> 
+                    <label for="ativ">Atividade: 
+                        <select id="atividade"> 
+                            <option value="">-----</option> 
+                            <option value="Academia" data-preco-anual="180" data-preco-semestral="220" data-preco-mensal="260">Academia</option> 
+                            <option value="Natacao" data-preco-anual="300" data-preco-semestral="340" data-preco-mensal="380">Natação</option> 
+                            <option value="Combo" data-preco-anual="330" data-preco-semestral="390" data-preco-mensal="440">Combo</option>
+                        </select> 
+                    </label> 
+                    <label for="plano" class="ColDirMat">Plano:  
+                        <select id="plano"> 
+                            <option value="">-----</option> 
+                            <option value="Anual">Anual</option> 
+                            <option value="Semestral">Semestral</option> 
+                            <option value="Mensal">Mensal</option>
+                        </select> 
+                    </label> 
+                </div> 
+                
+                <fieldset>
+                    <legend> Cartão</legend> 
+                    <label class="colLabCrd">Bandeira: 
+                        <label><input type="radio" name="RadBand" checked />Visa</label> 
+                        <label><input type="radio" name="RadBand" />Master</label> 
+                        <label><input type="radio" name="RadBand" />Elo</label> 
+                    </label><br/> 
+                    <label class="colLabCrd" for="mesVal">Validade:
+                        <input type="number" name="TxtMesVal" id="mesVal" min="1" max="12" class="numDD" value="10" /> / 
+                        <input type="number" name="TxtAnoVal" value="2024" min="2023" max="2040" class="numQD" />
+                    </label><br/> 
+                    <label class="colLabCrd" for="numCar">Número: 
+                        <input type="text" name="TxtNumCard" class="inpNCC" id="numCar"/>
+                    </label><br/> 
+                </fieldset> 
+                <div class="linhaNome"> 
+                    <input type="button" value="Matrícula+Plano" onclick="calcularValorTotal()">  
+                    <label for="TxtTotal" class="ColDirMat">Valor: R$ 
+                        <input type="text" name="TxtTotal" readonly id="TxtTotal" class="inpVal" />
+                    </label> 
+                </div> 
+            </fieldset> 
+            <p class="entDireita">   
+                <input type="submit" value="Enviar" name="BtnEnviar"> 
+                <input type="reset" value="Limpar" name="BtnLimpar"> 
+            </p> 
+            <br><br> 
+        </div> 
+    </form> 
+</section>
+
+
+<!-- JavaScript -->
+
+<script>
+function calcularValorTotal() {
+    const atividade = document.getElementById('atividade');
+    const plano = document.getElementById('plano');
+    const matriculadoCheckbox = document.getElementById('mat');
+    const numeroMatricula = document.getElementById('numeroMatricula').value;
+    const totalElement = document.getElementById('TxtTotal');
+    
+    if (atividade.value === "") {
+        alert("Por favor, selecione uma atividade.");
+        return;
+    }
+    if (plano.value === "") {
+        alert("Por favor, selecione um plano.");
+        return;
+    }
+
+// Definir o preço de acordo com a atividade e o plano selecionado
+ let precoAtividade;
+ switch (plano.value) {
+    case "Anual":
+        precoAtividade = parseFloat(atividade.options[atividade.selectedIndex].getAttribute('data-preco-anual'));
+        break;
+    case "Semestral":
+        precoAtividade = parseFloat(atividade.options[atividade.selectedIndex].getAttribute('data-preco-semestral'));
+        break;
+    case "Mensal":
+        precoAtividade = parseFloat(atividade.options[atividade.selectedIndex].getAttribute('data-preco-mensal'));
+        break;
+    default:
+        precoAtividade = 0;
+    }
+    
+// Calcula o valor total
+    let valorTotal = precoAtividade;
+    
+// Se o usuário não estiver matriculado ou o número de matrícula estiver vazio, adiciona o valor da matrícula
+if (!matriculadoCheckbox.checked || numeroMatricula === "") {
+    valorTotal += 80; // Preço da matrícula.
+ }
+    
+// Exibe o valor total no campo de texto
+    totalElement.value = valorTotal.toFixed(2);
+}
+
+// Função para validar os números de telefone
+function validaTelefone(event) {
+    var input = event.target;
+    var valor = input.value;
+    var tamanhoEsperado = (input.id === 'tel') ? 8 : 9;
+    var apenasNumeros = /^[0-9]*$/;
+
+if (!apenasNumeros.test(valor)) {
+    alert("Digite apenas números.");
+    input.value = valor.slice(0, -1);
+    return;
+}
+
+if (valor.length > tamanhoEsperado) {
+    alert(input.id === 'tel' ? "O telefone fixo deve conter exatamente 8 dígitos." : "O celular deve conter exatamente 9 dígitos.");
+    input.value = valor.slice(0, tamanhoEsperado); 
+    }
+}
+</script>
+
+    
+    
+</body>
+</html>
